@@ -39,8 +39,8 @@ def marvin_post(subreddit):
             marvin_reply="Marvin bot says: "+random.choice(marvin_quotes)
             comment.reply(marvin_reply)
             print (marvin_reply)
-    time.sleep(10)
-n=5
+    time.sleep(10) #set time gap for repeating response, suggest to >10second to avoid banning fronm reddit
+n=5 #set times the program runs
 while n>0:
     marvin_post(subreddit)
     n-=1
